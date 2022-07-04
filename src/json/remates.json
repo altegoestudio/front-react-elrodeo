@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "10 remate de Equinos",
+    "owner": "Estancia Bella Italia",
+    "type": "string",
+    "start": "2022-05-23T20:38:32.006Z",
+    "end": "2022-05-25T20:38:32.006Z",
+    "imageUrl": "../img/portada.png",
+    "lotes": [
+      {
+        "id": 0,
+        "remateId": 0,
+        "name": "string",
+        "order": "string",
+        "createdAt": "2022-06-23T20:38:32.006Z",
+        "updatedAt": "2022-06-23T20:38:32.006Z",
+        "deletedAt": "2022-06-23T20:38:32.006Z"
+      }
+    ],
+    "status": "string",
+    "order": 0,
+    "createdAt": "2022-06-23T20:38:32.006Z",
+    "updatedAt": "2022-06-23T20:38:32.006Z",
+    "deletedAt": "2022-06-23T20:38:32.006Z"
+  },
+  {
+    "id": 4,
+    "name": "11 remate de Equinos",
+    "owner": "Estancia Tirpa",
+    "type": "string",
+    "start": "2022-05-13T20:38:32.006Z",
+    "end": "2022-07-25T20:38:32.006Z",
+    "imageUrl": "../img/portada.png",
+    "lotes": [
+      {
+        "id": 0,
+        "remateId": 0,
+        "name": "string",
+        "order": "string",
+        "createdAt": "2022-06-23T20:38:32.006Z",
+        "updatedAt": "2022-06-23T20:38:32.006Z",
+        "deletedAt": "2022-06-23T20:38:32.006Z"
+      }
+    ],
+    "status": "string",
+    "order": 0,
+    "createdAt": "2022-06-23T20:38:32.006Z",
+    "updatedAt": "2022-06-23T20:38:32.006Z",
+    "deletedAt": "2022-06-23T20:38:32.006Z"
+  },
+  {
+    "id": 3,
+    "name": "12 remate de Equinos",
+    "owner": "Estancia Tirpa",
+    "type": "string",
+    "start": "2022-05-23T20:38:32.006Z",
+    "end": "2022-06-25T06:00:32.006Z",
+    "imageUrl": "../img/portada.png",
+    "lotes": [
+      {
+        "id": 0,
+        "remateId": 0,
+        "name": "string",
+        "order": "string",
+        "createdAt": "2022-06-23T20:38:32.006Z",
+        "updatedAt": "2022-06-23T20:38:32.006Z",
+        "deletedAt": "2022-06-23T20:38:32.006Z"
+      }
+    ],
+    "status": "string",
+    "order": 0,
+    "createdAt": "2022-06-23T20:38:32.006Z",
+    "updatedAt": "2022-06-23T20:38:32.006Z",
+    "deletedAt": "2022-06-23T20:38:32.006Z"
+  }
+]

@@ -1,0 +1,30 @@
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  width: 144px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  padding-top: 12px;
+  box-sizing: border-box;
+  font-size: 12px;
+  margin-left: 8px;
+}
+.btn:hover{
+  -webkit-filter: brightness(70%);
+}
+.btn_cta{
+  background-color: $naranja;
+  border: none;
+
+}
+.btn-ppl{
+  background-color: #19513C;
+  border: none;
+}
+.btn-disable{
+  cursor: not-allowed;
+  background-color: $grisClaro;
+}

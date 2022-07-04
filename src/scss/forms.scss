@@ -1,0 +1,92 @@
+.form{
+  &-m{
+    margin-left: 32px;
+    margin-right: 32px
+  }
+  form{
+    padding: 16px;
+    margin: auto 0;
+  }
+  &_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+  box-sizing: border-box;
+  color: grey;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  max-width: 700px;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  min-height: 400px;
+  overflow: hidden;
+  animation-name: fadeIn;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+  @media screen and (max-width: $bp_ipad){
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr;
+  }
+  @media screen and (max-width: $bp_ipad){
+    grid-template-rows: 200px 1fr;
+  }
+  h3{
+    text-align: left;
+    font-size: 32px;
+    font-weight: lighter;
+    color: $naranja;
+  }
+  input{
+    padding-left: 8px;
+    width: 100%;
+    max-width: 600px;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 8px;
+    &:focus-visible{
+        outline-color: $statusGreen;
+      }
+  }
+  small{
+    height: 12px;
+    font-size: 12px;
+    color: $statusRed;
+    border: 1px solid white;
+  }
+  label{
+    margin-top: 32px;
+    font-weight: lighter;
+    font-size: 12px;
+  }
+  &_box{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    &_item{
+      margin-top: 0;
+    }
+  }
+  button{
+    margin-top: 32px;
+    margin-left: auto !important;
+    padding-top: 0px;
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn{
+  from{
+    margin-top: 84px;
+    opacity: 0;
+  }
+  to{
+    margin-top: 64px;
+    opacity: 1;
+  }
+}

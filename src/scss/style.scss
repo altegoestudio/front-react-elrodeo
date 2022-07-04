@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'hero';
+@import 'rematesCard';
+@import 'lotesCard';
+@import 'lotesBig';
+@import 'moleculas';
+@import 'loteFicha';
+@import 'forms';
+
+main{
+  min-height: calc(100vh - 348px);
+}
+a{
+  color: inherit;
+}

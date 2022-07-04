@@ -1,0 +1,149 @@
+.ficha{
+  width: 100%;
+  padding: 54px;
+  border-radius: 16px;
+  max-width: 1200px;
+  background-color: white;
+  height: auto;
+  margin: auto;
+  margin-top: 24px;
+  &_wrapp{
+    padding: 16px;
+    display: flex;
+  }
+  &_titulo{
+    color: #545454;
+    &_codigo{
+      font-size: 16px;
+      &_dato{
+        font-size: 24px;
+        color: #FF9900;
+        opacity: 1;
+        margin-top: 8px;
+      }
+    }
+    &_titular{
+      font-size: 35px;
+      margin-top: 16px;
+      font-weight: bold;
+    }
+  }
+  &_datosPrincipales{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    &-cajas{
+      width: 290px;
+      min-width: 200px;
+      margin-top: 16px;
+      &_titulos{
+        color: #FF9900;
+        font-weight: bold;
+      }
+      &_datos{
+        color: #545454;
+        margin-top: 8px;
+      }
+    }
+  }
+  &_datosSecundarios{
+    border: 1px solid #545454;
+    border-width: 1px 1px 0 1px;
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    :last-child{
+      flex-grow: 2.5;
+    }
+    &_cajas{
+      flex-grow: 1;
+      height: 72px;
+      padding: 8px;
+      min-width: 48%;
+      border: 1px solid #545454;
+      border-width: 0 0 1px 0;
+
+      &_titulo{
+        color: #19513C;
+        font-weight: bold;
+      }
+      &_dato{
+        color: #FF9900;
+        font-size: 24px;
+        font-weight: normal;
+        margin-top: 8px;
+        background-color: white !important;
+      }
+    }
+  }
+  &_stats{
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &_caja{
+      width: 500px;
+      min-width: 400px;
+      margin: 16px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: #545454;
+      &_img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: black;
+      }
+      &_titulo{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 16px;
+      }
+      &_texto{
+        margin-top: 16px;
+        text-align: center;
+        font-size: 14px;
+        opacity: 0.5;
+        text-transform: uppercase;
+        line-height: 1.6;
+      }
+    }
+  }
+  &_galeria{
+
+    margin-top: 32px;
+    &_titulo{
+      color: #545454;
+      font-weight: bold;
+      text-align: center;
+      font-size: 20px;
+    }
+    &_caja{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 24px;
+      &_foto{
+        width: 24%;
+        @media screen and (max-width: $bp_imac){
+          width: 48%;
+
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  &_botonera{
+    display: flex;
+    justify-content: center;
+    margin: 48px;
+  }
+
+}

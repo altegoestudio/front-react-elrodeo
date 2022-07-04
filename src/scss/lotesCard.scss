@@ -1,0 +1,139 @@
+.card2{
+  padding: 8px;
+  margin-top: 23px;
+
+
+  &_container{
+    overflow: hidden;
+    border-radius: 8px;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    max-width: 1064px;
+    display: grid;
+    grid-template-columns: 389px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 32px 100px 100px 1fr;
+    grid-template-areas:
+      "lote timer timer timer timer"
+      "img titulo titulo precio precio"
+      "img caracteristica caracteristica caracteristica caracteristica"
+      "img botonera botonera botonera botonera";
+    @media screen and (max-width: $bp_imac){
+      grid-template-columns: 389px 1fr 1fr 1fr 1fr;
+      grid-template-rows: 32px 32px 100px 75px 100px;
+      grid-template-areas:
+        "lote timer timer timer timer"
+        "img precio precio precio precio"
+        "img titulo titulo titulo titulo"
+        "img caracteristica caracteristica caracteristica caracteristica"
+        "img botonera botonera botonera botonera";
+    }
+    @media screen and (max-width: $bp_ipad){
+      max-width: 450px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 32px 32px 200px 32px 100px 100px 100px;
+      grid-template-areas:
+        "timer timer"
+        "lote lote"
+        "img img"
+        "precio precio"
+        "titulo titulo"
+        "caracteristica caracteristica"
+        "botonera botonera";
+    }
+    &_lote{
+      background-color: #19513C;
+      color: white;
+      font-weight: 700;
+      grid-area: lote;
+      text-align: center;
+      padding-left: 8px;
+      padding-right: 9px;
+      padding-top: 7px;
+    }
+    &_img{
+      background-color: blue;
+      grid-area: img;
+      overflow: hidden;
+      img{
+        height: 100%;
+        object-fit: cover;
+        @media screen and (max-width: $bp_ipad){
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+    &_timer{
+      color: white;
+      background-color: #BDBDBD;
+      grid-area: timer;
+      text-align: right;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 7px;
+    }
+    &_titulo{
+      background-color: white;
+      color: #333333;
+      font-size: 24px;
+      padding: 8px;
+      padding-top: 26px;
+      font-weight: bold;
+      grid-area: titulo;
+    }
+    &_precio{
+      color: #333333;
+      background-color: white;
+      grid-area: precio;
+      padding: 8px;
+      padding-top: 26px;
+      text-align: right;
+      @media screen and (max-width: $bp_imac){
+        text-align: left;
+      }
+    }
+    &_caracteristica{
+      padding: 8px;
+      font-size: 12px;
+      background-color: white;
+      grid-area: caracteristica;
+      display: flex;
+      flex-wrap: wrap;
+      height: 12px;
+      gap: 8px;
+      justify-content: flex-start;
+      &-item{
+        min-width: 120px;
+      }
+    }
+    &_botonera{
+      background-color: white;
+      display: flex;
+      flex-wrap: nowrap;
+      grid-area: botonera;
+      padding: 8px;
+      @media screen and (max-width: $bp_imac){
+        flex-wrap: wrap;
+      }
+    }
+    &_btn{
+      color: white;
+      margin-right: 16px;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+      cursor: pointer;
+      text-align: center;
+      padding-top: 10px;
+      height: 48px;
+      border-radius: 8px;
+      background-color: orange;
+      width: 100%;
+      max-width: 318px;
+      padding-top: 12px;
+      @media screen and (max-width: $bp_imac){
+        max-width: 100%;
+      }
+    }
+  }
+}

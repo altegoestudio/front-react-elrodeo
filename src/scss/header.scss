@@ -1,0 +1,145 @@
+
+
+.navbar{
+  height: 84px;
+  background-color: $verdeOscuro;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  box-sizing: border-box;
+  transition: height 0.4s;
+  @media screen and (max-width: $bp_iphone){
+    padding: 0 8px;
+  }
+  &:hover{
+    height: 126px;
+    @media screen and (max-width: $bp_ipad){
+      height: 84px;
+    }
+  }
+  div{
+    min-height: 20px;
+  }
+
+  &_rrss{
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 352px;
+    @media screen and (max-width: $bp_imac){
+      width: 200px;
+    }
+    @media screen and (max-width: $bp_ipad){
+      display: none;
+    }
+    &-icon{
+      transform: scale(1);
+      transition: transform 0.4s;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.1);
+        -webkit-filter: brightness(70%);
+      }
+    }
+  }
+
+  &_logo{
+    display: inline-flex;
+    margin: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    height: 90%;
+    padding: 16px 16px 16px 0px;
+    transition: margin-left 0.4s;
+    @media screen and (max-width: $bp_ipad){
+      margin-left: 0;
+    }
+    &:hover{
+      -webkit-filter: brightness(70%);
+    }
+  }
+
+  &_logo{
+    a{
+      display: inline-flex;
+    }
+    &_img{
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+  }
+
+  &_botonera{
+    display: flex;
+    gap: 16px;
+    animation-name: show;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    @media screen and (max-width: $bp_imac){
+      display: none;
+    }
+  }
+  &_hamburger{
+    width: 200px;
+    justify-content: flex-end;
+    display: none;
+    @media screen and (max-width: $bp_imac){
+      display: flex;
+    }
+  }
+  &_user{
+    font-size: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation-name: show;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    p{
+      line-height: 2;
+      b{
+        color: $naranja;
+      }
+    }
+  }
+}
+
+@keyframes show{
+  from{
+    margin-bottom: 120px;
+    opacity: 0;
+  }
+  to{
+    margin-bottom: 0px;
+    opacity: 1;
+
+  }
+}
+
+
+
+/*navbar*/
+
+.navbar_menu{
+  height: 32px;
+  background-color: #839F95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $bp_imac){
+    display: none;
+  }
+
+}
+.navbar_menu ul{
+  display: flex;
+  gap: 80px;
+  list-style: none;
+  color: white;
+}

@@ -1,0 +1,54 @@
+$myColor: grey;
+$verdeOscuro: #19513C;
+$statusRed: #F96161;
+$statusGreen: #66A38C;
+$statusGrey: #BDBDBD;
+
+$bp_imac: 1080px;
+$bp_ipad: 834px;
+$bp_iphone: 428px;
+$gris: #545454;
+$grisClaro: #EEE;
+$negro: #333333;
+$naranja: #FF9900;
+
+$s1:8px;
+$s2:16px;
+$s3:24px;
+$s4:32px;
+$s5:40px;
+$s6:48px;
+$s7:56px;
+$s8:64px;
+$s9:72px;
+$s10:80px;
+$s11:88px;
+$s12:96px;
+$s13:104px;
+$s14:112px;
+$s15:120px;
+$s16:128px;
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'DM Sans', sans-serif;
+  background-color: #EEEEEE
+}
+
+h2{
+  color: white;
+  font-size: 72px;
+  line-height: 120%;
+  @media screen and (max-width: $bp_imac){
+    font-size: 56px;
+    line-height: 120%;
+  }
+}
+
+.notFound{
+  height: 80vh;
+}

@@ -1,0 +1,60 @@
+.hero{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: $s15 $s6 ;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap:$s4;
+  background-position: center center;
+  background-size: cover;
+  @media screen and (max-width: $bp_imac){
+    gap:$s2;
+  }
+  @media screen and (max-width: $bp_ipad){
+    padding: $s10 $s3 ;
+  }
+  @media screen and (max-width: $bp_iphone){
+    padding: $s6 $s1 ;
+  }
+  .btn{
+    margin-left: 0
+  }
+  &_parragraph{
+    color: white;
+    font-size: 20px;
+    max-width: 700px;
+    line-height: 156%;
+    @media screen and (max-width: $bp_imac){
+      font-size: 16px;
+      max-width: 500px;
+    }
+    @media screen and (max-width: $bp_iphone){
+      font-size: $s2;
+    }
+  }
+  &_title{
+    color: white;
+    max-width: 800px;
+    font-size: $s9;
+    line-height: 120%;
+    @media screen and (max-width: $bp_imac){
+      font-size: $s7;
+      line-height: 120%;
+      max-width: 600px;
+    }
+    @media screen and (max-width: $bp_iphone){
+      font-size: $s5;
+    }
+  }
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,168 @@
+.lotesBig{
+  padding: 8px 32px 8px 32px;
+  display: flex;
+  justify-content: center;
+  &_portada{
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    max-height: 400px;
+    overflow: hidden;
+    margin-bottom: 32px;
+    border-radius: 16px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+  &_card{
+    background-color: white;
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 48px 60px 2fr 4fr;
+    grid-template-rows: 90px auto 1fr;
+    grid-template-areas:
+     "status order img principal"
+     "status order img secundaria"
+     "status order img botonera";
+     @media screen and (max-width: $bp_imac){
+       grid-template-columns: 48px 60px 1fr;
+       grid-template-rows: 200px 120px auto 60px;
+       grid-template-areas:
+        "status order img"
+        "status order principal"
+        "status order secundaria"
+        "status order botonera";
+     }
+     @media screen and (max-width: $bp_ipad){
+       grid-template-rows: 200px auto auto 60px;
+     }
+    &_status{
+      width: 100%;
+      height: 100%;
+      background-color: $statusGrey;
+      grid-area: status;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &-activo{
+        background-color: $statusGreen;
+      }
+      &-terminado{
+        background-color: $statusRed;
+      }
+      p{
+        transform: rotate(-90deg);
+        color: white;
+      }
+    }
+    &_order{
+      background-color: white;
+      grid-area: order;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 16px;
+      border: 1px solid $grisClaro;
+      border-width: 0 1px 0 0;
+    }
+    &_img{
+      grid-area: img;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &_infoPrincipal{
+      background-color: white;
+      padding: 32px;
+      display: flex;
+      gap:8px;
+      justify-content: space-between;
+      grid-area: principal;
+      border: 1px solid $grisClaro;
+      border-width: 0 0 1px 0;
+      &_bloques{
+        font-size: 12px;
+        text-transform: uppercase;
+        @media screen and (max-width: $bp_ipad){
+          width: 40%;
+        }
+        &_titulo{
+          font-weight: bold;
+          color: $negro;
+        }
+        &_descripcion{
+          color: $naranja;
+          margin-top: 12px;
+        }
+      }
+      @media screen and (max-width: $bp_ipad){
+        flex-wrap: wrap;
+      }
+    }
+    &_infoSecundaria{
+      background-color: white;
+      grid-area: secundaria;
+      padding: 32px;
+      padding-top: 0;
+      padding-bottom: 8px;
+      font-size: 12px;
+      text-transform: uppercase;
+      overflow-x: scroll;
+      @media screen and (max-width: $bp_imac){
+
+      }
+      &_caja{
+        background-color: white;
+        border-radius: 4px;
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 8px;
+
+        &::after{
+          content: 'grrrrrrr';
+          position: sticky;
+          right: -40px;
+          background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 70%);
+          width: 50px;
+          color: transparent;
+          display: none;
+          @media screen and (max-width: $bp_ipad){
+            display: block;
+          }
+        }
+        &_bloque{
+          &_titulo{
+            font-weight: bold;
+            width: 100px;
+
+          }
+          &_descripcion{
+            width: 100px;
+            margin-top: 8px;
+            color: $naranja;
+          }
+        }
+      }
+
+    }
+    &_botonera{
+      display: flex;
+      justify-content: center;
+      padding-top: 8px;
+      padding-bottom: 16px;
+      background-color: white;
+      grid-area: botonera;
+    }
+  }
+}

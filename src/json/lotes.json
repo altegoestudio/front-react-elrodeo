@@ -1,0 +1,610 @@
+[
+
+  {
+    "loteId": 1,
+    "remateId": 1,
+    "name": "string",
+    "order": "string",
+    "status": false,
+    "animales": [
+      {
+        "id": 1,
+        "remateId": 1,
+        "loteId": 1,
+        "propiedades": [
+          {
+            "id": 1,
+            "remateId": 1,
+            "name": "Marcos",
+            "value": "Capo",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 2,
+            "remateId": 1,
+            "name": "Peso",
+            "value": "173kg",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 3,
+            "remateId": 1,
+            "name": "Sexo",
+            "value": "Femenino",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 3,
+            "remateId": 1,
+            "name": "Gestando",
+            "value": "Si",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 4,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 5,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 6,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 7,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 8,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          }
+        ],
+        "createdAt": "2022-06-23T20:36:22.000Z",
+        "updatedAt": "2022-06-23T20:36:22.000Z",
+        "deletedAt": "2022-06-23T20:36:22.000Z"
+      },
+      {
+        "id": 2,
+        "remateId": 1,
+        "loteId": 0,
+        "propiedades": [
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Animal",
+            "value": "Bufalo",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Peso",
+            "value": "173kg",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Sexo",
+            "value": "Femenino",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Gestando",
+            "value": "Si",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          }
+        ],
+        "createdAt": "2022-06-23T20:36:22.000Z",
+        "updatedAt": "2022-06-23T20:36:22.000Z",
+        "deletedAt": "2022-06-23T20:36:22.000Z"
+      },
+      {
+        "id": 0,
+        "remateId": 1,
+        "loteId": 0,
+        "propiedades": [
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Animal",
+            "value": "Bufalo",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Peso",
+            "value": "173kg",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Sexo",
+            "value": "Femenino",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Gestando",
+            "value": "Si",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 1,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          }
+        ],
+        "createdAt": "2022-06-23T20:36:22.000Z",
+        "updatedAt": "2022-06-23T20:36:22.000Z",
+        "deletedAt": "2022-06-23T20:36:22.000Z"
+      }
+    ],
+    "info": {
+      "propietario": "La Huella",
+      "oferta": "500.000 gs",
+      "ofertante": "R-1274",
+      "peso": "645Kg",
+      "carimbo": "4,5,6"
+    }
+  },
+
+
+
+
+
+
+  {
+    "loteId": 2,
+    "remateId": 2,
+    "name": "string",
+    "order": "string",
+    "status": true,
+    "animales": [
+      {
+        "id": 0,
+        "remateId": 2,
+        "loteId": 0,
+        "propiedades": [
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Animal",
+            "value": "Bufalo",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Peso",
+            "value": "173kg",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Sexo",
+            "value": "Femenino",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Gestando",
+            "value": "Si",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          }
+        ],
+        "createdAt": "2022-06-23T20:36:22.000Z",
+        "updatedAt": "2022-06-23T20:36:22.000Z",
+        "deletedAt": "2022-06-23T20:36:22.000Z"
+      },
+      {
+        "id": 0,
+        "remateId": 2,
+        "loteId": 0,
+        "propiedades": [
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Animal",
+            "value": "Bufalo",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Peso",
+            "value": "173kg",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Sexo",
+            "value": "Femenino",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Gestando",
+            "value": "Si",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          }
+        ],
+        "createdAt": "2022-06-23T20:36:22.000Z",
+        "updatedAt": "2022-06-23T20:36:22.000Z",
+        "deletedAt": "2022-06-23T20:36:22.000Z"
+      },
+      {
+        "id": 0,
+        "remateId": 2,
+        "loteId": 0,
+        "propiedades": [
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Animal",
+            "value": "Bufalo",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Peso",
+            "value": "173kg",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Sexo",
+            "value": "Femenino",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Gestando",
+            "value": "Si",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          }
+        ],
+        "createdAt": "2022-06-23T20:36:22.000Z",
+        "updatedAt": "2022-06-23T20:36:22.000Z",
+        "deletedAt": "2022-06-23T20:36:22.000Z"
+      },
+      {
+        "id": 0,
+        "remateId": 2,
+        "loteId": 0,
+        "propiedades": [
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Animal",
+            "value": "Bufalo",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Peso",
+            "value": "173kg",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Sexo",
+            "value": "Femenino",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Gestando",
+            "value": "Si",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 2,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          }
+        ],
+        "createdAt": "2022-06-23T20:36:22.000Z",
+        "updatedAt": "2022-06-23T20:36:22.000Z",
+        "deletedAt": "2022-06-23T20:36:22.000Z"
+      }
+    ],
+    "info": {
+      "propietario": "La Huella",
+      "oferta": "500.000 gs",
+      "ofertante": "R-1274",
+      "peso": "645Kg",
+      "carimbo": "4,5,6"
+    }
+  },
+
+
+
+
+  {
+    "loteId": 3,
+    "remateId": 3,
+    "name": "string",
+    "order": "string",
+    "status": false,
+    "animales": [
+      {
+        "id": 0,
+        "remateId": 3,
+        "loteId": 0,
+        "propiedades": [
+          {
+            "id": 0,
+            "remateId": 3,
+            "name": "Animal",
+            "value": "Bufalo",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 3,
+            "name": "Peso",
+            "value": "173kg",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 3,
+            "name": "Sexo",
+            "value": "Femenino",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 3,
+            "name": "Gestando",
+            "value": "Si",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          },
+          {
+            "id": 0,
+            "remateId": 3,
+            "name": "Pelaje",
+            "value": "Marron",
+            "createdAt": "2022-06-23T20:36:22.000Z",
+            "updatedAt": "2022-06-23T20:36:22.000Z",
+            "deletedAt": "2022-06-23T20:36:22.000Z"
+          }
+        ],
+        "createdAt": "2022-06-23T20:36:22.000Z",
+        "updatedAt": "2022-06-23T20:36:22.000Z",
+        "deletedAt": "2022-06-23T20:36:22.000Z"
+      }
+    ],
+    "info": {
+      "propietario": "La Huella",
+      "oferta": "500.000 gs",
+      "ofertante": "R-1274",
+      "peso": "645Kg",
+      "carimbo": "4,5,6"
+    }
+  }
+
+]

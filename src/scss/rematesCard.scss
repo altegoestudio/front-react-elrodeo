@@ -1,0 +1,113 @@
+.card1{
+  padding: 32px;
+  padding-top: 8px;
+  padding-bottom: 0;
+  margin-top: 32px;
+  &_container{
+    overflow: hidden;
+    background-color: grey;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 300px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 32px 1fr;
+    grid-template-areas:
+      "img status"
+      "img text";
+    @media screen and (max-width: $bp_ipad){
+      grid-template-columns: 1fr;
+      grid-template-rows: 32px 300px 218px;
+      grid-template-areas:
+        "status"
+        "img"
+        "text";
+    }
+    &_img{
+      background-color: white;
+      grid-area: img;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+    &_status{
+      color: white;
+      background-color: #F96161;
+      padding-left: 16px;
+      padding-top: 8px;
+      grid-area: status;
+      font-size: 12px;
+    }
+    &_text{
+
+      padding: 16px;
+      padding-top: 32px;
+      padding-bottom: 40px;
+      background-color: white;
+      grid-area: text;
+      color: #545454;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media screen and (max-width: $bp_ipad){
+        padding-top: 30px;
+      }
+      &_cajaSuperior{
+        width: 100%;
+      }
+      &_cajaInferior{
+        align-self: flex-end;
+      }
+      &-cliente{
+        font-size: 22px;
+        width: 100%;
+      }
+      &-titulo{
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 100%;
+        margin-top: 16px;
+        width: 100%;
+        @media screen and (max-width: $bp_ipad){
+          margin-top: 8px;
+        }
+      }
+      &-fecha{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        @media screen and (max-width: $bp_ipad){
+          font-size: 16px;
+        }
+      }
+      &-tiempo{
+
+      }
+    }
+  }
+}
+
+.statusGrey{
+  background-color: $statusGrey;
+}
+
+.statusGreen{
+  background-color: $statusGreen;
+}
+
+.statusRed{
+  background-color: $statusRed;
+}
+
+.remates_list{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
