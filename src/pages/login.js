@@ -31,7 +31,7 @@ class Login extends React.Component{
     if(this.state.mailCheck && this.state.passCheck){
       console.log("Se puede logear");
       try {
-        let res = await fetch("https://localhost:7270/api/Auth/login", {
+        let res = await fetch("http://localhost:8050/api/Auth/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -54,7 +54,7 @@ class Login extends React.Component{
               logged: true
             });
 
-            this.canello.handleUser(this.state.userName, this.state.logged);
+            this.canello.handleUser(this.state.userName, this.state.logged, this.state.token);
 
 
           }else{
@@ -157,6 +157,7 @@ class Login extends React.Component{
 
           <button  type="button" onClick={this.onSubmit} className="btn btn_cta">Iniciar</button><br/>
           <small id="mensajeBtn"></small>
+          <p>Necesita migrar su cuenta anterior? haga click aqui</p>
           </div>
         </form>
       </div>

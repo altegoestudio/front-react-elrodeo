@@ -22,7 +22,7 @@ class RematesList extends React.Component{
         end: "2022-07-04T15:10:40.407839-03:00",
         img: " "
       }
-    ]
+    ],
   }
   componentDidMount(){
     this.fetchData();
@@ -31,7 +31,7 @@ class RematesList extends React.Component{
     this.setState({loading: true})
     var dataArr = []
     try{
-      const daw = await fetch("https://localhost:7270/api/Remates/GetAllRemates",{
+      const daw = await fetch("http://localhost:8050/api/Remates/get-all-remates",{
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -45,8 +45,9 @@ class RematesList extends React.Component{
       .then((response)=> response.json())
       .then((data)=> {
         dataArr = data;
+        //console.log(dataArr);
         this.setState({data: dataArr.data})
-        //console.log(this.state.data);
+        console.log(this.state.data);
 
       })
     }
@@ -54,7 +55,7 @@ class RematesList extends React.Component{
       console.log(error);
     }
 
-    setTimeout(()=>{this.setState({loading: false})},10)
+    setTimeout(()=>{this.setState({loading: false});console.log(this.state.data);},10)
   }
   render(){
     if(this.state.loading === true){
@@ -66,9 +67,9 @@ class RematesList extends React.Component{
     }
     return(
       <div className="remates_list">
-        
+
         {this.state.data.map(card => (
-          <Link to={"/remate/"+ card.id} key={card.id} style={{ textDecoration: 'none' }}>
+          <Link to={"/lote/" +  card.id} key={card.id} style={{ textDecoration: 'none' }}>
             <RematesCard
               key={card.id}
               mi={card.id}
@@ -86,3 +87,6 @@ class RematesList extends React.Component{
 }
 
 export default RematesList;
+/*
+<Link to={"/remate/"+ card.id} key={card.id} style={{ textDecoration: 'none' }}>
+*/

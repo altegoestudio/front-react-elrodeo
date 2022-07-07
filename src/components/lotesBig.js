@@ -2,19 +2,27 @@ import React from 'react';
 import lotesBig from '../json/lotes.json';
 import {Link} from 'react-router-dom';
 
+var bodyData = {
+  loteId: 2
+}
+
 class LotesBig extends React.Component{
   state = {
+    loteId: 5,
+    id: this.props.mi,
+    price: this.props.base,
+    minOfferIncrement: this.minOfferIncrement,
     status: this.props.status,
     orden: this.props.orden,
+    name: this.props.name,
+    remateId: this.props.remated,
     img: null,
     caracteristicas: [
-      {label: "propietario" , value: this.props.propietario},
-      {label: "peso" , value: this.props.peso},
-      {label: "carimbo" ,value: this.props.carimbo},
-      {label: "oferta", value: this.props.oferta},
-      {label: "ofertante", value: this.props.ofertante},
+      {label: "propietario" , value: this.props.name},
+      {label: "Oferta" , value: this.props.base},
+      {label: "Ofertante" ,value: "sin ofertas"},
     ],
-    animales: this.props.animales,
+    animales: "this.props.animales",
     start: null,
     end: null,
     statusDOM: "s"
@@ -62,7 +70,7 @@ class LotesBig extends React.Component{
 
 
 
-
+/*
     for (var i = 0; i < this.state.animales.length; i++) {
       var caja = [];
       //console.log(i);
@@ -101,17 +109,55 @@ class LotesBig extends React.Component{
     }
     list = list.join(' ');
     secundaria.innerHTML = list;
+*/
+
+  }
+  fetchData = async () =>{
+
+    var dataArr = []
+    try{
+      const daw = await fetch("http://localhost:8050/api/Ofertas/get-highest-bid-from-lote",{
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+          "Content-Type": "application/json",
+          "accept": "text/plain"
+        },
+        mode: 'cors',
+        cache: 'default',
+        body: JSON.stringify(bodyData),
+        data: {
+          "remateId": "1"
+        }
+      })
+      .then((response)=> response.json())
+      .then((data)=> {
+        dataArr = data;
+        console.log(dataArr);
+        this.setState({price: dataArr.data.offer})
+        console.log(this.state.price);
 
 
+      })
+    }
+    catch(error){
+      console.log(error);
+    }
+
+    setTimeout(()=>{this.setState({price: dataArr.data.offer});console.log(this.state.price)},30)
   }
   componentDidMount(){
 
     this.getStatus();
     this.getPrincipales();
     this.getPropiedades();
-
+    //this.fetchData();
+    console.log(this.state.price);
   }
   render(){
+
+    console.log(this.state.id);
+    console.log(this.props.remated);
     return(
       <div>
         <div className='lotesBig'>
@@ -144,9 +190,11 @@ class LotesBig extends React.Component{
                   VER MÁS
                 </div>
               </Link>
-              <div className="btn btn_cta">
-                OFERTAR
-              </div>
+              <Link to={"/puja/" + this.props.mi + "/" + this.props.remated} props={{ minOfferIncrement: this.state.minOfferIncrement, }}>
+                <div className="btn btn_cta">
+                  OFERTAR
+                </div>
+              </Link>
             </div>
           </div>
         </div>

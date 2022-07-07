@@ -96,11 +96,9 @@ class Header extends React.Component {
           <div className="navbar_menu">
             <ul>
 
-                <li><NavLink to='/'>Remates</NavLink></li>
+              
 
-                <li><NavLink to='/comingsoon'>Invernada</NavLink></li>
 
-                <li><NavLink to='/comingsoon'>Nosotros</NavLink></li>
 
             </ul>
           </div>

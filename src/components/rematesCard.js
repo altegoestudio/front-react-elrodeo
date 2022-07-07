@@ -4,6 +4,10 @@ import imageUrl from '../img/portada.png';
 
 var rematesA = remates[0];
 
+const remateID = window.location.href.split('/')[4]
+console.log(remateID);
+
+
 
 
 
@@ -19,6 +23,7 @@ class RematesCard extends React.Component{
     status: document.getElementById('status'+this.props.mi),
     name: this.props.name,
     owner: this.props.owner,
+    remateID: window.location.href.split('/')[4]
   }
 
   getStatus(){
@@ -150,7 +155,7 @@ class RematesCard extends React.Component{
       <div className="card1">
         <div className="card1_container">
           <div className="card1_container_img">
-            <img src={this.props.img} alt=""/>
+            <img src="./img/placeholder.png" alt=""/>
           </div>
           <div className="card1_container_status" id={"status"+this.props.mi}>
 

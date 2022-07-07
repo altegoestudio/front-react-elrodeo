@@ -10,6 +10,8 @@ import FichaPage from './pages/fichaPage';
 import Login from './pages/login';
 import Register from './pages/register';
 import Error from './pages/404';
+import Migrar from './pages/migrar';
+import Puja2 from './pages/puja3';
 import Proximamente from './pages/proximamente';
 
 
@@ -24,15 +26,17 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      userName: " ",
+      userName: "p",
       logged: false
     }
   }
-  handleUser = (e,c) => {
+  handleUser = (e,c,t) => {
     this.setState( this.state = {
       ...this.state,
       logged: c,
-      userName: e }
+      userName: e,
+      token: t }
+
     );
     //this.forceUpdate()
   }
@@ -50,11 +54,13 @@ class App extends React.Component{
       <Layout data={this.state} handleLogout={this.handleLogout}>
           <Routes>
             <Route path='/' element={<RematesPage />}/>
-            <Route path='/lote' element={<LotesPage />}/>
+            <Route path='/lote/:id' element={<LotesPage />}/>
             <Route path='/remate/:remateId' element={<LotesPage />}/>
             <Route path='/remate/:remateId/lote/:loteId' element={<FichaPage />}/>
             <Route path='/login' element={   <Login handleUser={this.handleUser}/>  }  />
             <Route path='/register' element={<Register />}/>
+            <Route path='/migrar' element={<Migrar />}/>
+            <Route path='/puja/:loteId/:base' element={<Puja2 token={this.state.token}/>}/>
             <Route path='*' element={<Error />}/>
             <Route path='/comingsoon' element={<Proximamente />}/>
           </Routes>
