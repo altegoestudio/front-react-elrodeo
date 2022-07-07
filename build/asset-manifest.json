@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ad9be6e6.css",
+    "main.js": "/static/js/main.3289e46c.js",
+    "static/js/787.2c77bffe.chunk.js": "/static/js/787.2c77bffe.chunk.js",
+    "static/media/hero-image.png": "/static/media/hero-image.1dd7b506c41565481efd.png",
+    "static/media/portada.png": "/static/media/portada.a39e29f303b5c1105f1b.png",
+    "static/media/logo_footer.svg": "/static/media/logo_footer.c50f560d24441e1d4313ad5457ea50ae.svg",
+    "static/media/logo_rodeo.svg": "/static/media/logo_rodeo.84b2441a652f2a6a1eb636daf7346d02.svg",
+    "static/media/instagram.svg": "/static/media/instagram.93fe975e55fa7700c93cd279506f100e.svg",
+    "static/media/twitter.svg": "/static/media/twitter.09f8a5c7f54190429455f19e8835f541.svg",
+    "static/media/facebook.svg": "/static/media/facebook.dcf306a0f400cd1c67e1d2475299ca3f.svg",
+    "index.html": "/index.html",
+    "static/media/hamburger.svg": "/static/media/hamburger.d6dba34b9f15ea6a2d4c60ded4c0d0a2.svg",
+    "main.ad9be6e6.css.map": "/static/css/main.ad9be6e6.css.map",
+    "main.3289e46c.js.map": "/static/js/main.3289e46c.js.map",
+    "787.2c77bffe.chunk.js.map": "/static/js/787.2c77bffe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad9be6e6.css",
+    "static/js/main.3289e46c.js"
+  ]
+}
