@@ -32,7 +32,7 @@ class Puja extends React.Component{
   }
   fetchData1 = async () =>{
     try{
-      const daw = await fetch("http://localhost:8050/api/Remates/get-lotes-from-remates",{
+      const daw = await fetch("https://api.elrodeo.com.py/api/Remates/get-lotes-from-remates",{
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -65,7 +65,7 @@ class Puja extends React.Component{
   }
   fetchData2 = async () =>{
     try{
-      const daw = await fetch("http://localhost:8050/api/Ofertas/get-highest-bid-from-lote",{
+      const daw = await fetch("https://api.elrodeo.com.py/api/Ofertas/get-highest-bid-from-lote",{
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -100,7 +100,7 @@ class Puja extends React.Component{
     {if(!this.state.loading){
       return null
     }}
-    
+
     return(
       <div className="form-m" >
       <p className="form-back">Atras</p>

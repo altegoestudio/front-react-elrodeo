@@ -31,7 +31,7 @@ class Login extends React.Component{
     if(this.state.mailCheck && this.state.passCheck){
       console.log("Se puede logear");
       try {
-        let res = await fetch("http://localhost:8050/api/Auth/login", {
+        let res = await fetch("https://api.elrodeo.com.py/api/Auth/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

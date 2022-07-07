@@ -30,7 +30,7 @@ class LotesBigList extends React.Component{
       this.setState({loading: true})
       var dataArr = []
       try{
-        const daw = await fetch("http://localhost:8050/api/Remates/get-lotes-from-remates",{
+        const daw = await fetch("https://api.elrodeo.com.py/api/Remates/get-lotes-from-remates",{
           method: 'POST',
           credentials: 'include',
           headers: {
@@ -73,7 +73,7 @@ class LotesBigList extends React.Component{
       return(
         <div>
           <div className="lotesBig_portada">
-            
+
           </div>
           <div className="lotesBig_portada">
             <img src="../img/portada.png" />
@@ -88,7 +88,7 @@ class LotesBigList extends React.Component{
               status={lote.status}
               orden={lote.order}
               propietario={lote.owner}
-              base={lote.minOfferValue}
+              base={lote.maxOffer}
               minOffer={lote.minOfferIncrement}
               peso="{lote.info.peso}"
               carimbo="{lote.info.carimbo}"

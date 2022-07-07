@@ -19,8 +19,7 @@ class LotesBig extends React.Component{
     img: null,
     caracteristicas: [
       {label: "propietario" , value: this.props.name},
-      {label: "Oferta" , value: this.props.base},
-      {label: "Ofertante" ,value: "sin ofertas"},
+      {label: "Ultima Oferta" , value: this.props.base}
     ],
     animales: "this.props.animales",
     start: null,
@@ -29,7 +28,7 @@ class LotesBig extends React.Component{
   }
   getStatus(){
     var status = document.getElementById("status" + this.props.mi);
-    if(this.state.status){
+    if(!this.state.status){
       status.classList.remove("lotesBig_card_status-terminado");
       status.classList.add("lotesBig_card_status-activo");
       status.innerHTML = "<p>Activo</p>";
@@ -116,7 +115,7 @@ class LotesBig extends React.Component{
 
     var dataArr = []
     try{
-      const daw = await fetch("http://localhost:8050/api/Ofertas/get-highest-bid-from-lote",{
+      const daw = await fetch("https://api.elrodeo.com.py/api/Ofertas/get-highest-bid-from-lote",{
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -160,7 +159,7 @@ class LotesBig extends React.Component{
     console.log(this.props.remated);
     return(
       <div>
-        <div className='lotesBig'>
+        <div className='lotesBig' id="lotesBigOne">
           <div className='lotesBig_card'>
             <div className="lotesBig_card_status" id={"status" + this.props.mi}>
               <p>Desconocido</p>

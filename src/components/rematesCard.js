@@ -155,7 +155,7 @@ class RematesCard extends React.Component{
       <div className="card1">
         <div className="card1_container">
           <div className="card1_container_img">
-            <img src="./img/placeholder.png" alt=""/>
+            <img src="./img/vacas.png" alt=""/>
           </div>
           <div className="card1_container_status" id={"status"+this.props.mi}>
 

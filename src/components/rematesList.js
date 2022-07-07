@@ -31,7 +31,7 @@ class RematesList extends React.Component{
     this.setState({loading: true})
     var dataArr = []
     try{
-      const daw = await fetch("http://localhost:8050/api/Remates/get-all-remates",{
+      const daw = await fetch("https://api.elrodeo.com.py/api/Remates/get-all-remates",{
         method: 'POST',
         credentials: 'include',
         headers: {

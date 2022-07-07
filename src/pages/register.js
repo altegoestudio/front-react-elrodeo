@@ -70,7 +70,7 @@ class Register extends React.Component{
 
     if(this.state.mailCheck && this.state.passCheck){
       try {
-        let res = await fetch("http://localhost:8050/api/Auth/register", {
+        let res = await fetch("https://api.elrodeo.com.py/api/Auth/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
