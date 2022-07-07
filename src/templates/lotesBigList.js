@@ -69,7 +69,7 @@ class LotesBigList extends React.Component{
       if(this.state.loading){
         return null
       }
-      console.log(this.state.data);
+      console.log(this.state.data.loteList[0].animales);
       return(
         <div>
           <div className="lotesBig_portada">
@@ -78,7 +78,7 @@ class LotesBigList extends React.Component{
           <div className="lotesBig_portada">
             <img src="../img/portada.png" />
           </div>
-          {this.state.data.map((lote, i) => (
+          {this.state.data.loteList.map((lote, i) => (
             <LotesBig
               path={"pathnameID"}
               key={i}
@@ -94,7 +94,7 @@ class LotesBigList extends React.Component{
               carimbo="{lote.info.carimbo}"
               oferta="{lote.info.oferta}"
               ofertante="{lote.info.ofertante}"
-              animales="{lote.animales}"
+              animales={lote.animales}
             />
           ))}
 

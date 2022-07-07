@@ -74,7 +74,7 @@ class Puja2 extends React.Component{
         //console.log(data.data.filter( lote => lote.id == this.state.lid ));
       //var bart = data.data.filter( lote => lote.id == this.state.lid )
         //this.setState({lote: bart})
-        this.setState({lote: data.data.filter( lote => lote.id == this.state.lid )[0]})
+        this.setState({lote: data.data.loteList.filter( lote => lote.id == this.state.lid )[0]})
 
       })
     }

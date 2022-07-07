@@ -21,7 +21,7 @@ class LotesBig extends React.Component{
       {label: "propietario" , value: this.props.name},
       {label: "Ultima Oferta" , value: this.props.base}
     ],
-    animales: "this.props.animales",
+    animales: this.props.animales,
     start: null,
     end: null,
     statusDOM: "s"
@@ -69,7 +69,7 @@ class LotesBig extends React.Component{
 
 
 
-/*
+
     for (var i = 0; i < this.state.animales.length; i++) {
       var caja = [];
       //console.log(i);
@@ -108,7 +108,7 @@ class LotesBig extends React.Component{
     }
     list = list.join(' ');
     secundaria.innerHTML = list;
-*/
+
 
   }
   fetchData = async () =>{
