@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {useParams, useNavigate, useLocation, Navigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function useHandleNavigate(to){
   let navigate = useNavigate();
@@ -157,7 +158,7 @@ class Login extends React.Component{
 
           <button  type="button" onClick={this.onSubmit} className="btn btn_cta">Iniciar</button><br/>
           <small id="mensajeBtn"></small>
-          <p>Necesita migrar su cuenta anterior? haga click aqui</p>
+          <small>Necesita migrar su cuenta anterior? haga <Link to="/migrar">click aqui</Link></small>
           </div>
         </form>
       </div>
