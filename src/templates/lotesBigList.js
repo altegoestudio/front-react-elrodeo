@@ -25,6 +25,10 @@ class LotesBigList extends React.Component{
     }
     componentDidMount(){
       this.fetchData();
+
+    }
+    sorter(){
+
     }
     fetchData = async () =>{
       this.setState({loading: true})
@@ -51,12 +55,17 @@ class LotesBigList extends React.Component{
           this.setState({data: dataArr.data})
           console.log(this.state.data[0].id);
 
+          setTimeout(()=>{
+            //console.log(typeof this.state.data);
+          },1000)
+
           this.state.data.map((lote, i) => {
             var string = lote.id.toString()
             console.log(string);
             console.log(i);
-            this.setState({data: dataArr.data})
+            //this.setState({data: dataArr.data})
           } )
+
         })
       }
       catch(error){
@@ -78,9 +87,11 @@ class LotesBigList extends React.Component{
           <div className="lotesBig_portada">
             <img src="../img/portada.png" />
           </div>
+          <div className="orderer">
+
           {this.state.data.loteList.map((lote, i) => (
             <LotesBig
-              path={"pathnameID"}
+              path={lote.remateId}
               key={i}
               mi={lote.id}
               name={lote.name}
@@ -99,7 +110,7 @@ class LotesBigList extends React.Component{
           ))}
 
 
-
+          </div>
         </div>
       )
     }

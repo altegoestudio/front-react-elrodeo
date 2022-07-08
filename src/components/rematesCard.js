@@ -108,8 +108,6 @@ class RematesCard extends React.Component{
       if(this.state.chrono){
         function updateCountdown(){
 
-
-
           var now = new Date();
           var duration = date_target - now;
 

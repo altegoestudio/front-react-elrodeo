@@ -133,7 +133,7 @@ class Login extends React.Component{
           <div className="form_box">
 
             <div className="form_box_item">
-              <label>Mail</label>
+              <label>Mail</label><br/>
               <input
                 type="text"
                 id='mail'
@@ -145,7 +145,7 @@ class Login extends React.Component{
             </div>
 
             <div className="form_box_item">
-              <label>pass</label>
+              <label>pass</label><br/>
               <input
                 type="password"
                 id='pass'

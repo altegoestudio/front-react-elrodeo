@@ -53,7 +53,7 @@ class App extends React.Component{
      <BrowserRouter>
       <Layout data={this.state} handleLogout={this.handleLogout}>
           <Routes>
-            <Route path='/' element={<RematesPage />}/>
+            <Route exact path='/' element={<RematesPage />}/>
             <Route path='/lote/:id' element={<LotesPage />}/>
             <Route path='/remate/:remateId' element={<LotesPage />}/>
             <Route path='/remate/:remateId/lote/:loteId' element={<FichaPage />}/>
@@ -61,7 +61,6 @@ class App extends React.Component{
             <Route path='/register' element={<Register />}/>
             <Route path='/migrar' element={<Migrar />}/>
             <Route path='/puja/:loteId/:base' element={<Puja2 token={this.state.token}/>}/>
-            <Route path='*' element={<Error />}/>
             <Route path='/comingsoon' element={<Proximamente />}/>
           </Routes>
         </Layout>

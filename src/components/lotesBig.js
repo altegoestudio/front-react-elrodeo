@@ -8,6 +8,7 @@ var bodyData = {
 
 class LotesBig extends React.Component{
   state = {
+
     loteId: 5,
     id: this.props.mi,
     price: this.props.base,
@@ -24,7 +25,8 @@ class LotesBig extends React.Component{
     animales: this.props.animales,
     start: null,
     end: null,
-    statusDOM: "s"
+    statusDOM: "s",
+    style: {order: this.props.orden} 
   }
   getStatus(){
     var status = document.getElementById("status" + this.props.mi);
@@ -158,7 +160,7 @@ class LotesBig extends React.Component{
     console.log(this.state.id);
     console.log(this.props.remated);
     return(
-      <div>
+      <div style={this.state.style}>
         <div className='lotesBig' id="lotesBigOne">
           <div className='lotesBig_card'>
             <div className="lotesBig_card_status" id={"status" + this.props.mi}>

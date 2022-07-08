@@ -126,177 +126,121 @@ class Register extends React.Component{
       <div className="form-m">
       { this.state.logged ? (<Navigate to="/login"/>) : null }
       <div className="form">
-        <img src="./img/cow-reg.png" className="form_img"/>
+        <img src="./img/cow-log.png" className="form_img"/>
         <form onSubmit={this.onSubmit}>
+        <br/>
+        <br/>
           <h3>Registrate</h3>
             <div className="form_box">
+              <div className="form_flex">
+                <div>
+                    <div className="form_box_item">
+                      <label>Nombre</label><br/>
+                      <input
+                        type="text"
+                        className="input_wide"
+                        id='name'
+                        name='name'
+                        onChange={(e) => {this.setState({name: e.target.value})}}
+                      />
+                    </div>
 
-              <div className="form_box_item">
-                <label>Nombre</label><br/>
-                <input
-                  type="text"
-                  id='name'
-                  name='name'
-                  onChange={(e) => {this.setState({name: e.target.value})}}
-                />
+                    <div className="form_box_item">
+                      <label>Apellido</label><br/>
+                      <input
+                        type="text"
+                        className="input_wide"
+                        id='lastName'
+                        name='lastName'
+                        onChange={(e) => {this.setState({lastName: e.target.value})}}
+                      />
+                    </div>
+                    <div className="form_box_item">
+                      <label>Email</label><br/>
+                      <input
+                        type="email"
+                        className="input_wide"
+                        id='email'
+                        name='email'
+                        autoComplete="on"
+                        className="input_wide"
+                        onChange={this.handlerMail}
+                      />
+                      <small id="mensajeEmail"></small>
+                    </div>
+                    <div className="form_box_item">
+                      <label>password</label><br/>
+                      <input
+                        type="password"
+                        className="input_wide"
+                        id='pass'
+                        name='pass'
+                        autoComplete="on"
+                        onChange={this.handlerPass}
+                      />
+                      <small id="mensajePassword"></small>
+                    </div>
+                </div>
+                    <div>
+                    <div className="form_box_item">
+                      <label>RUC</label><br/>
+                      <input
+                        type="text"
+                        className="input_wide"
+                        id='ruc'
+                        name='ruc'
+                        autoComplete="on"
+                        onChange={(e) => {this.setState({ruc: e.target.value})}}
+                      />
+                    </div>
+                    <div className="form_box_item">
+                      <label>Celular</label><br/>
+                      <input
+                        type="password"
+                        className="input_wide"
+                        id='cellphone'
+                        name='cellphone'
+                        autoComplete="on"
+                        onChange={(e) => {this.setState({cellphone: e.target.value})}}
+                      />
+                    </div>
+                    <div className="form_box_item">
+                      <label>Departamento</label><br/>
+                      <input
+                        type="password"
+                        className="input_wide"
+                        id='department'
+                        name='department'
+                        autoComplete="on"
+                        onChange={(e) => {this.setState({department: e.target.value})}}
+                      />
+                    </div>
+                    <div className="form_box_item">
+                      <label>Establecimiento</label><br/>
+                      <input
+                        type="text"
+                        className="input_wide"
+                        id='stablishment'
+                        name='stablishment'
+                        autoComplete="on"
+                        onChange={(e) => {this.setState({stablishment: e.target.value})}}
+                      />
+                    </div>
+
+                    <div className="form_box_item">
+                      <label>Est. Codigo</label><br/>
+                      <input
+                        type="text"
+                        className="input_wide"
+                        id='stablishmentCode'
+                        name='stablishmentCode'
+                        autoComplete="on"
+                        onChange={(e) => {this.setState({stablishmentCode: e.target.value})}}
+                      />
+                    </div>
+                </div>
               </div>
 
-              <div className="form_box_item">
-                <label>Apellido</label><br/>
-                <input
-                  type="text"
-                  id='lastName'
-                  name='lastName'
-                  onChange={(e) => {this.setState({lastName: e.target.value})}}
-                />
-              </div>
-
-
-              <div className="form_box_item">
-                <label>Empresa</label><br/>
-                <input
-                  type="text"
-                  id='businessName'
-                  name='businessName'
-                  autoComplete="on"
-                  onChange={(e) => {this.setState({businessName: e.target.value})}}
-                />
-              </div>
-
-              <div className="form_box_item">
-                <label>ruc</label><br/>
-                <input
-                  type="text"
-                  id='ruc'
-                  name='ruc'
-                  autoComplete="on"
-                  onChange={(e) => {this.setState({ruc: e.target.value})}}
-                />
-              </div>
-
-              <div className="form_box_item">
-                <label>Establecimiento</label><br/>
-                <input
-                  type="text"
-                  id='stablishment'
-                  name='stablishment'
-                  autoComplete="on"
-                  onChange={(e) => {this.setState({stablishment: e.target.value})}}
-                />
-              </div>
-
-              <div className="form_box_item">
-                <label>Est. Direccion</label><br/>
-                <input
-                  type="text"
-                  id='stablishmentDirection'
-                  name='stablishmentDirection'
-                  autoComplete="on"
-                  onChange={(e) => {this.setState({stablishmentDirection: e.target.value})}}
-                />
-              </div>
-
-              <div className="form_box_item">
-                <label>Est. Departamento</label><br/>
-                <input
-                  type="text"
-                  id='stablishmentDepartment'
-                  name='stablishmentDepartment'
-                  autoComplete="on"
-                  onChange={(e) => {this.setState({stablishmentDepartment: e.target.value})}}
-                />
-              </div>
-
-              <div className="form_box_item">
-                <label>Est. Telefono</label><br/>
-                <input
-                  type="text"
-                  id='stablishmentTelephone'
-                  name='stablishmentTelephone'
-                  autoComplete="on"
-                  onChange={(e) => {this.setState({stablishmentTelephone: e.target.value})}}
-                />
-              </div>
-
-              <div className="form_box_item">
-                <label>Est. Codigo</label><br/>
-                <input
-                  type="text"
-                  id='stablishmentCode'
-                  name='stablishmentCode'
-                  autoComplete="on"
-                  onChange={(e) => {this.setState({stablishmentCode: e.target.value})}}
-                />
-              </div>
-
-              <div className="form_box_item">
-                <label>Telefono</label><br/>
-                <input
-                  type="text"
-                  id='telephone'
-                  name='telephone'
-                  autoComplete="on"
-                  onChange={(e) => {this.setState({telephone: e.target.value})}}
-                />
-              </div>
-
-              <div className="form_box_item">
-                <label>Celular</label><br/>
-                <input
-                  type="password"
-                  id='cellphone'
-                  name='cellphone'
-                  autoComplete="on"
-                  onChange={(e) => {this.setState({cellphone: e.target.value})}}
-                />
-              </div>
-
-              <div className="form_box_item">
-                <label>Direccion</label><br/>
-                <input
-                  type="text"
-                  id='direction'
-                  name='direction'
-                  autoComplete="on"
-                  onChange={(e) => {this.setState({direction: e.target.value})}}
-                />
-              </div>
-
-              <div className="form_box_item">
-                <label>Departamento</label><br/>
-                <input
-                  type="password"
-                  id='department'
-                  name='department'
-                  autoComplete="on"
-                  onChange={(e) => {this.setState({department: e.target.value})}}
-                />
-
-              </div>
-
-              <div className="form_box_item">
-                <label>Email</label><br/>
-                <input
-                  type="email"
-                  id='email'
-                  name='email'
-                  autoComplete="on"
-                  onChange={this.handlerMail}
-                />
-                <small id="mensajeEmail"></small>
-              </div>
-
-              <div className="form_box_item">
-                <label>password</label><br/>
-                <input
-                  type="password"
-                  id='pass'
-                  name='pass'
-                  autoComplete="on"
-                  onChange={this.handlerPass}
-                />
-                <small id="mensajePassword"></small>
-              </div>
 
             </div>
 
